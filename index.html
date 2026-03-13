@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio - Hugo Jovel Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+     <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Hugo Jovel Web</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a> 
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>            
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>            
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>               
+        </header>
+     </div>
+     
+     <!-- SECCION INICIO -->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/image.jpg" alt="Hug0">
+                </div>
+                    <h1>Hugo Jovel Web</h1>
+                    <h2>Desarrollador Web</h2>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/share/16HQo9ux4S/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/hugo-jovel-web-b882b82a8/"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-skype"></i></a> -->                        
+                        <!-- <a href="#"><i class="fa-solid fa-rss"></i></a> -->
+                    </div>
+                </div>
+            </section>
+
+               <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Hugo Jovel.</span> Desarrollador Web en transición desde el soporte técnico, con experiencia 
+                 en creación de sitios web profesionales (WordPress, HTML, CSS, JS y PHP) actualmente ampliando mis habilidades hacia el Desarrollo de Software con Java. 
+                 Estoy cursando un bootcamp intensivo donde aplico principios de Programación Orientada a Objetos,
+                 SOLID y Bases de Datos. Me enfoco en crear soluciones bien estructuradas, mantenibles y funcionales tanto en el Frontend como en el Backend... </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            10-04-1989
+                        </li>                        
+                        <li>
+                            <strong>Email</strong>
+                            hugojovelweb@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.hugojovelweb.tech
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            El Rosario, La Paz, El Salvador
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>GUITAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>                      
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>            
+                <a href="https://flowcv.com/resume/lbb1b2ou2a" class="btn" target="_blank" rel="noopener noreferrer">
+                    Ver CV <i class="fa-regular fa-file"></i>                    
+                </a>         
+               
+        </div>
+    </section>
+
+   <!-- SECCION SKILLS -->
+   <section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+            <!-- Technical Skill -->
+            <div class="col">
+                <h3>Technical Skills</h3>
+                <div class="skill">
+                    <span>Javascript</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>89%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Php</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Wordpress</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Bases de Datos</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Professional Skills -->
+            <div class="col">
+                <h3>Professional Skills</h3>
+                <div class="skill">
+                    <span>Comunicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Trabajo en Equipo</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Creatividad</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>99%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Dedicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Proyect Management</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>94%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+
+                 <div class="item izq">
+                    <h4>Java Developer</h4>
+                    <span class="casa">Certificación Kodigo</span>
+                    <span class="fecha">2025</span>
+                    <p>java Fundamentos de Java: Sintaxis básica, tipos de datos, estructuras de control y programación orientada a objetos (POO)  Principios SOLID  . <br><br> 
+                       <ul> Aplicaciones practicas del curso:</ul><br>
+                        <li>Sistemas de facturación y ERP. </li> <br>                      
+                        <li>Aplicaciones web con paneles de control. </li><br>                       
+                        <li>Integración con herramientas de BI (Power BI, Tableau, Metabase).                        
+                            Aplicaciones móviles con backend en MySQL.</li><br>
+                        <li>Automatización de informes para empresas. </li><br> </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+                <div class="item izq">
+                    <h4>SQL TOTAL</h4>
+                    <span class="casa">Certificación en Línea</span>
+                    <span class="fecha">2025</span>
+                    <p>Dominar la creación, gestión y optimización de bases de datos relacionales aplicando SQL en contextos reales y modernos (aplicaciones web, BI, backends, automatización) 
+                        <br><br>
+                       <ul> Aplicaciones practicas del curso:</ul><br>
+                        <li>Sistemas de facturación y ERP. </li> <br>                      
+                        <li>Aplicaciones web con paneles de control. </li><br>                       
+                        <li>Integración con herramientas de BI (Power BI, Tableau, Metabase).                        
+                            Aplicaciones móviles con backend en MySQL.</li><br>
+                        <li>Automatización de informes para empresas. </li><br> </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+                <div class="item izq">
+                    <h4>Google: Inteligencia Artificial y productividad</h4>
+                    <span class="casa">Certificación en Línea</span>
+                    <span class="fecha">2025</span>
+                    <p><li>Fundamentos de la IA :
+                        Cómo funciona, en qué se basa y cómo se está aplicando en el día a día.</li> <br>
+                        
+                        <li>Uso práctico de herramientas como Gemini, DeepSeek, ChatGPT, Vibe Coding :
+                            Cómo integrar la IA en correos electrónicos, documentos, hojas de cálculo y presentaciones etc.</li><br>
+                        
+                       <li> Organización del trabajo con IA :
+                        Gestión de agendas, recordatorios, respuestas inteligentes y asistentes virtuales.</li><br>
+                        
+                       <li> IA en la toma de decisiones :
+                        Cómo usarla para análisis de datos, evaluación de opciones y generación de ideas.</li><br>
+                        
+                        <li>Buenas prácticas:
+                            Cómo usar la IA de forma responsable.</li><br></p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+                <div class="item izq">
+                    <h4>Curso de SEO y Posicionamiento Web</h4>
+                    <span class="casa">Certificación en Línea</span>
+                    <span class="fecha">2024</span>
+                    <p>Analisis de Sitios Web Verificacion de Plugins SEO On Page y Off Page,Configuracion de Google Search Console,Configuración con Goocle Analytics, Mejoramiento de Velocidad de Sitio Web, Posicionamiento de Sitios Web, Artículos optimizados para SEO, Indixar paginas para Google, Analizando con Google Page Speed.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+                 <div class="item izq">
+                    <h4>Desarrollador Web PHP Wordpress</h4>
+                    <span class="casa">Certificación en Línea</span>
+                    <span class="fecha">2022 - 2023</span>
+                    <p>Desarrollo de Sitios Web con Wordpress desde lo mas Básico hasta Avanzado útilizando herramientas y plugins como Woocomerce, Elementor, Customs Post Types y más.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Desarrollador Profesional De Temas y Plugins Wordpress</h4>
+                    <span class="casa">Certificación en Línea</span>
+                    <span class="fecha">2022 - 2023</span>
+                    <p>Creación de Sitios Web Modificados y al gusto del Cliente con Plantillas Themes y Plugins Personalizables para todo tipo de usuarios o empresas.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+                  <div class="item izq">
+                    <h4>HTML5, CSS3 Y JAVASCRIPT</h4>
+                    <span class="casa">Fedisal</span>
+                    <span class="fecha">2021 - 2022</span>
+                    <p>  HTML-Aprendizaje de Estructura Html, Formularios, Etiquetas Multimedia.<br>
+                         CSS- Sistema de Box Model, Posicionamiento en Display Flexbox y Grid, Animaciones y Transiciones Diseños Responsivos(Mobile-Fisrt) Procesadores(SASS y LESS).<br>
+                         Javascript- DOM, Eventos, ES6, AJAX, Promises y Async/await, FrameWorks y Librerías .</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+                <div class="item izq">
+                    <h4>Técnico de Ingenieria en Desarrollo de Sofware y Desarrollo Web</h4>
+                    <span class="casa">Instituto Tecnológico Itca Fepade</span>
+                    <span class="fecha">2005 - 2008</span>
+                    <p>Desarrollo de Software y Arquitecura de Diseños de Software, Desarrollo Web y Diseño Web </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>    
+            </div>
+
+            <!-- Columna de la Derecha Experiencia de trabajo -->
+
+            <div class="col derecha">
+                <h3>Experiencia de trabajo</h3>
+                
+                 <div class="item der">
+                    <h4>Web Developer / Web Master / SEO</h4>
+                    <span class="casa">Paralelo44</span>
+                    <span class="fecha">2025</span>
+                    <p>Desarrollo de Sitio Web Paralelo44 Agencia de Turismo en Europa.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+
+                <div class="item der">
+                    <h4>Web Developer / Web Master / SEO</h4>
+                    <span class="casa">CMARC-RENTACARS</span>
+                    <span class="fecha">2025</span>
+                    <p>Desarrollo de Sitio Web CMARC-RENTACARS Agencia de renta de vehiculos en El Salvador.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+
+                <div class="item der">
+                    <h4>Front Developer</h4>
+                    <span class="casa">Momotolabs</span>
+                    <span class="fecha">2025</span>
+                    <p>Desarrollo de Sitio Web Fressia Cerna Sitio Elaborado en Wordpress personalizando la plantilla que se compro para implementar en el Tema de Fressia Cerna.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                
+                <div class="item der">
+                    <h4>Web Developer</h4>
+                    <span class="casa">Freelance</span>
+                    <span class="fecha">2024-2025</span>
+                    <p>Colaboracíon con empresas multinacionales de Desarrollo de Web por medio de Trabajo Remoto</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+
+                <div class="item der">
+                    <h4>Web Developer / SEO</h4>
+                    <span class="casa">André Tours El Salvador</span>
+                    <span class="fecha">2024 - 2025</span>
+                    <p>Desarrollo de Sitio Web de André Tours El Salvador</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>                                    
+                </div>
+
+                <div class="item der">
+                    <h4>Web Developer / Web Master / SEO</h4>
+                    <span class="casa">Hugo Jovel Web</span>
+                    <span class="fecha">2024 - 2025</span>
+                    <p>Desarrollo de Sitio Web Oficial de Hugo Jovel Web Portfolio</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>                                    
+                </div>
+                <div class="item der">
+                    <h4>Software Developer</h4>
+                    <span class="casa">Alcaldia La Paz Centro</span>
+                    <span class="fecha">2024 - 2025</span>
+                    <p>Desarrollo de Software de Recursos Humanos para Control de Empleados en Sistema Multisucursal.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>                                    
+                </div>
+                <div class="item der">
+                    <h4>Software & Web Developer</h4>
+                    <span class="casa">Alcaldia El Rosario La Paz</span>
+                    <span class="fecha">2012 - 2025</span>
+                    <p>Tareas Diversas en Desarrollo de Software y Web para la Alcaldia de El Rosario La Paz: <br><br>
+                        <li>Desarrollo de Software de Recursos Humanos 2024-2025.</li><br>
+                        <li>Mantenimiento de Software de Cobro Tributario (Heredado) en Visual Fox Pro 2012-2025.</li><br>
+                        <li>Mantenimiento de Bases de Datos de Comures.</li><br>
+                        <li>Web Mail: Configuración Gestión de Datos Respaldos Seguridad y Privacidad de Correos Institucionales 2014-2025. </li><br>
+                        <li>Creación de Sitio Web Oficial de Alcaldia El Rosario La Paz 2012-2018</li>
+                        <br>   <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  
+                        <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>   <br>  <br>  <br>      <br>  <br>  <br>  <br>  <br>  <br>   <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>   <br>  <br>  <br>             
+                    </p>
+                        <div class="circulod"></div>
+                    </div>
+
+                    
+
+                   
+                    </div>                                    
+                </div>
+
+                    <!-- Seguir Agregando experiencias  -->
+
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>                                    
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>                                    
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>                                    
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>                                    
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>                                    
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>                                    
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>                                    
+                    </div> 
+                      <div class="item der">
+                        <h4></h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>                                    
+                    </div>
+                    <!-- Boton Certificaciones -->
+                     <a href="certificaciones.html" class="btn" target="_blank" rel="noopener noreferrer">
+                        Certificaciones <i class="fa-regular fa-file"></i>
+                     </a> 
+
+                    <!-- Termina Experiencias -->                  
+
+                </div>            
+            </div>             
+        </div>
+    </div>
+</section>
+
+ <!-- SECCION PORTFOLIO -->
+ <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">            
+          
+
+            <div class="proyecto"> 
+                <a href="https://belen-relax-spa-wptest-hugojovelweb.netlify.app/" target="_blank">
+                    <img src="img/BelenSpaRelax1.jpg" alt="1">               
+                <div class="overlay">
+                    <h3>Belén</h3>
+                    <p>Spa Relax</p>
+                </div> </a>
+            </div>
+
+            <div class="proyecto"> 
+                <a href="https://colegioweb-wptest-hugojovelweb.netlify.app/" target="_blank">
+                    <img src="img/colegio-web.png" alt="1">
+                    <div class="overlay">
+                        <h3>Colegio Cesar Marcelo</h3>
+                        <p>Clases on line</p>
+                    </div>
+                </a>
+            </div>
+
+              <div class="proyecto"> 
+                <a href="https://andretourselsalvador.com.sv/" target="_blank">
+                    <img src="img/andretours.jpg" alt="1">               
+                <div class="overlay">
+                    <h3>Andretours El Salvador</h3>
+                    <p>Agencia de Viajes El Salvador</p>
+                </div> </a>
+            </div>
+            
+            <div class="proyecto"> 
+                <a href="https://gymfits-wpstest-hugojovelweb.netlify.app/" target="_blank">
+                    <img src="img/GYM (2).jpg" alt="1">               
+                <div class="overlay">
+                    <h3>GYM FITNESS</h3>
+                    <p>Sitio para Gymnacio</p>
+                </div> </a>
+            </div>            
+
+            <div class="proyecto"> 
+                <a href="https://verdugo-band-testwps-hugojovelweb.netlify.app/" target="_blank">
+                    <img src="img/verdugo.jpg" alt="1">               
+                <div class="overlay">
+                    <h3>VERDUGO BAND</h3>
+                    <p>Sitio para Banda de Death Metal Melódico</p>
+                </div> </a>
+            </div>         
+
+            <div class="proyecto"> 
+                <a href="https://festival-band.netlify.app/" target="_blank">
+                    <img src="img/1.jpg" alt="1">               
+                <div class="overlay">
+                    <h3>Festival Band</h3>
+                    <p>Sitio para Festival de Bandas</p>
+                </div> </a>
+            </div>
+
+            <div class="proyecto"> 
+                <a href="https://proyect-blog-de-cafe.netlify.app/" target="_blank">
+                    <img src="img/Café2.jpg" alt="1">               
+                <div class="overlay">
+                    <h3>Blog de Café</h3>
+                    <p>Sitio sobre la creación de Café</p>
+                </div> </a>
+            </div>       
+           
+
+            <div class="proyecto"> 
+                <a href="https://primer-carrito-web.netlify.app/" target="_blank">
+                    <img src="img/u2.jpg" alt="1">
+                    <div class="overlay">
+                        <h3>Web para Universidad</h3>
+                        <p>Cursos y Certificaciones en Línea</p>
+                    </div>
+                </a>
+            </div> 
+
+            <div class="proyecto"> 
+                <a href="https://primer0-proyecto-web.netlify.app/#" target="_blank">
+                    <img src="img/h1.jpg" alt="1">
+                    <div class="overlay">
+                        <h3>Diseño y Desarrollo Web Freelancer</h3>
+                        <p>Todo sobre mi</p>
+                    </div>
+                </a>
+            </div>
+
+            <a href="portfolio.html" class="btn" >
+               Ver Más <i class="fa-solid fa-magnifying-glass"></i>
+           </a>              
+        </div>            
+    </div>      
+</section>
+ <!-- SECCION CONTACTO -->
+ <section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>Contacto</h2>
+
+        <div class="fila">
+
+    <!-- Formulario -->
+    <div class="col">
+        <form action="mailto:info@hugojovelweb.tech" method="POST" enctype="text/plain">
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            <input type="tel" name="telefono" placeholder="Número telefónico" required>
+            <input type="email" name="correo" placeholder="Dirección de correo" required>
+            <input type="text" name="tema" placeholder="Tema">
+            <textarea name="mensaje" rows="10" placeholder="Mensaje" required></textarea>
+
+            <button type="submit" class="btn">
+                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+    <!-- Mapa -->
+    <div class="col">
+        <a href="https://maps.app.goo.gl/hm1gUN8rqe8r4Gzh9">
+            <img src="img/Ubicacion2.jpg" alt="">
+        </a>
+
+        <div class="info">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    El Rosario, La Paz, El Salvador
+                </li>
+                <li>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    Llamanos: +(503)-70570760
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email: info@hugojovelweb.tech
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+        
+    </div>
+</section>
+
+<!-- Seccion Formulario -->
+<!-- <div class="container">
+    <div class="header">
+        <h1>Contáctanos</h1>
+        <p>Completa el formulario y nos pondremos en contacto contigo</p>
+    </div>
+    
+    <div class="form-container">
+        <form id="contactForm" action="https://formsubmit.co/info@hugojovelweb.tech" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde el formulario de contacto">
+            
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Tú Nombre" required>
+                <div class="error-message" id="nameError">Por favor ingresa tu nombre</div>
+            </div>
+            
+            <div class="form-group">
+                <input type="tel" name="phone" id="phone" placeholder="Número telefónico" required>
+                <div class="error-message" id="phoneError">Por favor ingresa tu número telefónico</div>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Dirección de correo" required>
+                <div class="error-message" id="emailError">Por favor ingresa un correo válido</div>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" name="subject" id="subject" placeholder="Tema" required>
+                <div class="error-message" id="subjectError">Por favor ingresa el tema del mensaje</div>
+            </div>
+            
+            <div class="form-group">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <div class="error-message" id="messageError">Por favor ingresa tu mensaje</div>
+            </div>
+            
+            <button type="submit" class="btn2">
+                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+    
+    <div class="info-container">
+        <h2>Información de Contacto</h2>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@hugojovelweb.tech</p>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <p>+503 1234 5678</p>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>San Salvador, El Salvador</p>
+            </div>
+        </div>
+        
+        <p>Todos los campos son <span class="required">obligatorios</span>. Nos pondremos en contacto contigo lo antes posible.</p>
+        
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        let valid = true;
+        
+        // Validación de nombre
+        const name = document.getElementById('name');
+        if (name.value.trim() === '') {
+            document.getElementById('nameError').style.display = 'block';
+            name.style.borderColor = '#e74c3c';
+            valid = false;
+        } else {
+            document.getElementById('nameError').style.display = 'none';
+            name.style.borderColor = '#e1e1e1';
+        }
+        
+        // Validación de teléfono
+        const phone = document.getElementById('phone');
+        if (phone.value.trim() === '') {
+            document.getElementById('phoneError').style.display = 'block';
+            phone.style.borderColor = '#e74c3c';
+            valid = false;
+        } else {
+            document.getElementById('phoneError').style.display = 'none';
+            phone.style.borderColor = '#e1e1e1';
+        }
+        
+        // Validación de email
+        const email = document.getElementById('email');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email.value)) {
+            document.getElementById('emailError').style.display = 'block';
+            email.style.borderColor = '#e74c3c';
+            valid = false;
+        } else {
+            document.getElementById('emailError').style.display = 'none';
+            email.style.borderColor = '#e1e1e1';
+        }
+        
+        // Validación de tema
+        const subject = document.getElementById('subject');
+        if (subject.value.trim() === '') {
+            document.getElementById('subjectError').style.display = 'block';
+            subject.style.borderColor = '#e74c3c';
+            valid = false;
+        } else {
+            document.getElementById('subjectError').style.display = 'none';
+            subject.style.borderColor = '#e1e1e1';
+        }
+        
+        // Validación de mensaje
+        const message = document.getElementById('message');
+        if (message.value.trim() === '') {
+            document.getElementById('messageError').style.display = 'block';
+            message.style.borderColor = '#e74c3c';
+            valid = false;
+        } else {
+            document.getElementById('messageError').style.display = 'none';
+            message.style.borderColor = '#e1e1e1';
+        }
+        
+        if (!valid) {
+            e.preventDefault();
+        }
+    });
+    
+    // Validación en tiempo real
+    const inputs = document.querySelectorAll('input, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('input', function() {
+            if (this.value.trim() !== '') {
+                this.style.borderColor = '#e1e1e1';
+                const errorId = this.id + 'Error';
+                document.getElementById(errorId).style.display = 'none';
+            }
+        });
+    });
+</script> -->
+
+<!-- footer -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        
+        <a href="https://www.facebook.com/share/16HQo9ux4S/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/hugo-jovel-web-b882b82a8/"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+       
+        <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-skype"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a> -->
+    </div>
+
+<!-- Año actual Javascript Moderno -->
+<p>&copy; <span id="current-year"></span> Hugo Jovel Web</p>
+
+<script>
+  // Al final del body o en un archivo separado
+  const yearSpan = document.getElementById('current-year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+</script>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
