@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .header {
+            width: 100%;
+            background: #2575fc;
+            padding: 30px 40px;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .form-container {
+            padding: 40px;
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e1e1;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, textarea:focus {
+            border-color: #2575fc;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.2);
+        }
+        
+        input::placeholder, textarea::placeholder {
+            color: #aaa;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #2575fc;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: #1c64e0;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 117, 252, 0.5);
+        }
+        
+        .btn i {
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn:hover i {
+            transform: translateX(5px);
+        }
+        
+        .info-container {
+            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+            color: white;
+            padding: 40px;
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .info-container h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .info-container h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 70px;
+            height: 4px;
+            background: white;
+            border-radius: 2px;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item i {
+            font-size: 24px;
+            margin-right: 15px;
+            min-width: 30px;
+            padding-top: 5px;
+        }
+        
+        .contact-item p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: white;
+            color: #2575fc;
+            transform: translateY(-3px);
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        .error-message {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .form-container, .info-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Contáctanos</h1>
+            <p>Completa el formulario y nos pondremos en contacto contigo</p>
+        </div>
+        
+        <div class="form-container">
+            <form id="contactForm" action="https://formsubmit.co/info@hugojovelweb.tech" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde el formulario de contacto">
+                
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Tú Nombre" required>
+                    <div class="error-message" id="nameError">Por favor ingresa tu nombre</div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="tel" name="phone" id="phone" placeholder="Número telefónico" required>
+                    <div class="error-message" id="phoneError">Por favor ingresa tu número telefónico</div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Dirección de correo" required>
+                    <div class="error-message" id="emailError">Por favor ingresa un correo válido</div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" name="subject" id="subject" placeholder="Tema" required>
+                    <div class="error-message" id="subjectError">Por favor ingresa el tema del mensaje</div>
+                </div>
+                
+                <div class="form-group">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <div class="error-message" id="messageError">Por favor ingresa tu mensaje</div>
+                </div>
+                
+                <button type="submit" class="btn">
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+        
+        <div class="info-container">
+            <h2>Información de Contacto</h2>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>info@hugojovelweb.tech</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+503 7057-0760</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>San Salvador, El Salvador</p>
+                </div>
+            </div>
+            
+            <p>Todos los campos son <span class="required">obligatorios</span>. Nos pondremos en contacto contigo lo antes posible.</p>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/16HQo9ux4S/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/hugo-jovel-web-b882b82a8/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            let valid = true;
+            
+            // Validación de nombre
+            const name = document.getElementById('name');
+            if (name.value.trim() === '') {
+                document.getElementById('nameError').style.display = 'block';
+                name.style.borderColor = '#e74c3c';
+                valid = false;
+            } else {
+                document.getElementById('nameError').style.display = 'none';
+                name.style.borderColor = '#e1e1e1';
+            }
+            
+            // Validación de teléfono
+            const phone = document.getElementById('phone');
+            if (phone.value.trim() === '') {
+                document.getElementById('phoneError').style.display = 'block';
+                phone.style.borderColor = '#e74c3c';
+                valid = false;
+            } else {
+                document.getElementById('phoneError').style.display = 'none';
+                phone.style.borderColor = '#e1e1e1';
+            }
+            
+            // Validación de email
+            const email = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                document.getElementById('emailError').style.display = 'block';
+                email.style.borderColor = '#e74c3c';
+                valid = false;
+            } else {
+                document.getElementById('emailError').style.display = 'none';
+                email.style.borderColor = '#e1e1e1';
+            }
+            
+            // Validación de tema
+            const subject = document.getElementById('subject');
+            if (subject.value.trim() === '') {
+                document.getElementById('subjectError').style.display = 'block';
+                subject.style.borderColor = '#e74c3c';
+                valid = false;
+            } else {
+                document.getElementById('subjectError').style.display = 'none';
+                subject.style.borderColor = '#e1e1e1';
+            }
+            
+            // Validación de mensaje
+            const message = document.getElementById('message');
+            if (message.value.trim() === '') {
+                document.getElementById('messageError').style.display = 'block';
+                message.style.borderColor = '#e74c3c';
+                valid = false;
+            } else {
+                document.getElementById('messageError').style.display = 'none';
+                message.style.borderColor = '#e1e1e1';
+            }
+            
+            if (!valid) {
+                e.preventDefault();
+            }
+        });
+        
+        // Validación en tiempo real
+        const inputs = document.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                if (this.value.trim() !== '') {
+                    this.style.borderColor = '#e1e1e1';
+                    const errorId = this.id + 'Error';
+                    document.getElementById(errorId).style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
