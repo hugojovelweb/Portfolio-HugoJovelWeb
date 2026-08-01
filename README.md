@@ -17,3 +17,17 @@ Currently focused on:
 
 ---
 # 🚀 About Me
+
+I'm a Software Developer from El Salvador passionate about building scalable applications, workflow automations and business solutions.
+
+My experience includes:
+
+- Enterprise Web Applications
+- AI Automation Workflows
+- REST API Development
+- CRM Integrations
+- Digital Transformation
+- Cloud Deployment
+- Marketing Automation
+
+---
