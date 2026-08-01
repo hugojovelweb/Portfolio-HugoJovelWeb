@@ -52,3 +52,9 @@ My experience includes:
 - Hibernate
 - REST APIs
 
+## Frontend
+
+- React
+- Vite
+- Tailwind CSS
+- Bootstrap
