@@ -82,3 +82,11 @@ My experience includes:
 - AWS
 
 ---
+
+# 📂 Featured Projects
+
+### Facturación SV
+
+Electronic invoicing platform built with Spring Boot + React.
+
+---
