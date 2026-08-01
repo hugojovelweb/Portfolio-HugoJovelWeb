@@ -31,3 +31,5 @@ My experience includes:
 - Marketing Automation
 
 ---
+
+# 🛠 Tech Stack
