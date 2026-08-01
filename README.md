@@ -64,3 +64,12 @@ My experience includes:
 - PostgreSQL
 - MySQL
 - SQL Server
+
+## AI & Automation
+
+- n8n
+- OpenAI
+- AI Agents
+- Workflow Automation
+- Prompt Engineering
+- 
