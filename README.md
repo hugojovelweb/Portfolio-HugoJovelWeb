@@ -5,3 +5,14 @@
 I build modern web applications and AI-powered automation solutions using Java, Spring Boot, React, TypeScript and n8n.
 
 Currently focused on:
+
+- ☕ Java & Spring Boot
+- ⚛️ React + TypeScript
+- 🤖 AI Agents & Automations
+- ☁️ AWS & Cloud Technologies
+- 🐳 Docker
+- 🗄️ PostgreSQL & MySQL
+- 🔧 REST APIs
+- 🏗️ Clean Architecture
+
+---
