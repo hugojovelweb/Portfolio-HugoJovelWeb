@@ -33,3 +33,14 @@ My experience includes:
 ---
 
 # 🛠 Tech Stack
+
+## Languages
+
+- Java
+- TypeScript
+- JavaScript
+- PHP
+- SQL
+- HTML5
+- CSS3
+
