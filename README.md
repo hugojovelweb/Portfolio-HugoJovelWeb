@@ -44,3 +44,11 @@ My experience includes:
 - HTML5
 - CSS3
 
+## Backend
+
+- Spring Boot
+- Spring Security
+- Spring Data JPA
+- Hibernate
+- REST APIs
+
