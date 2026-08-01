@@ -72,4 +72,13 @@ My experience includes:
 - AI Agents
 - Workflow Automation
 - Prompt Engineering
-- 
+  
+## DevOps
+
+- Git
+- GitHub
+- Docker
+- Linux (Debian)
+- AWS
+
+---
