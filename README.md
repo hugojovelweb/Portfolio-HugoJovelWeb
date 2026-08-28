@@ -34,7 +34,7 @@ My experience includes:
 
 # 🛠 Tech Stack:
 
-## Languages
+## Languages:
 
 - Java
 - TypeScript
