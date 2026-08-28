@@ -73,7 +73,7 @@ My experience includes:
 - Workflow Automation
 - Prompt Engineering
   
-## DevOps
+## DevOps:
 
 - Git
 - GitHub
