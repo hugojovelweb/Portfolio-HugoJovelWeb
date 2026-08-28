@@ -1,4 +1,4 @@
-﻿# Hi there, I'm Hugo Jovel 👋
+# Hi there, I'm Hugo Jovel 👋
 
 ## Software Developer | Web Developer | AI Automation Engineer
 
@@ -16,7 +16,7 @@ Currently focused on:
 - 🏗️ Clean Architecture
 
 ---
-# 🚀 About Me
+# 🚀 About Me:
 
 I'm a Software Developer from El Salvador passionate about building scalable applications, workflow automations and business solutions.
 
