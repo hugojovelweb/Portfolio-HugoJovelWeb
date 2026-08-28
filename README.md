@@ -32,7 +32,7 @@ My experience includes:
 
 ---
 
-# 🛠 Tech Stack
+# 🛠 Tech Stack:
 
 ## Languages
 
