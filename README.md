@@ -52,7 +52,7 @@ My experience includes:
 - Hibernate
 - REST APIs
 
-## Frontend
+## Frontend:
 
 - React
 - Vite
