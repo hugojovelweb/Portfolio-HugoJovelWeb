@@ -83,7 +83,7 @@ My experience includes:
 
 ---
 
-# 📂 Featured Projects
+# 📂 Featured Projects:
 
 ### Facturación SV
 
