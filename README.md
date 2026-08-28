@@ -44,7 +44,7 @@ My experience includes:
 - HTML5
 - CSS3
 
-## Backend
+## Backend:
 
 - Spring Boot
 - Spring Security
