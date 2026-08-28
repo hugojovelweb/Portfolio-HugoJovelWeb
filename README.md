@@ -59,7 +59,7 @@ My experience includes:
 - Tailwind CSS
 - Bootstrap
 
-## Databases
+## Databases:
 
 - PostgreSQL
 - MySQL
