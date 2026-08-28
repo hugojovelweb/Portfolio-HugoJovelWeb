@@ -65,7 +65,7 @@ My experience includes:
 - MySQL
 - SQL Server
 
-## AI & Automation
+## AI & Automation:
 
 - n8n
 - OpenAI
