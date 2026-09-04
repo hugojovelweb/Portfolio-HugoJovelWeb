@@ -59,6 +59,7 @@ My experience includes:
 - Vite
 - Tailwind CSS
 - Bootstrap
+------
 
 ## Databases:
 
