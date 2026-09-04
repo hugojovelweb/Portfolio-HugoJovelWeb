@@ -43,6 +43,7 @@ My experience includes:
 - SQL
 - HTML5
 - CSS3
+--------
 
 ## Backend:
 
