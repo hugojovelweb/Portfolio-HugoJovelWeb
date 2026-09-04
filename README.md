@@ -1,4 +1,4 @@
-# Hi there, I'm Hugo Jovel 👋
+# Hi there, I'm Hugo Jovel 👋.
 
 ## Software Developer | Web Developer | AI Automation Engineer
 
